@@ -24,12 +24,11 @@ def contact(request):
         email = request.POST.get('email')
         phone = request.POST.get('phone')
         desc = request.POST.get('desc')
-        if name=="" or email=="":
-            messages.success(request,"Required fields must be filled ")
-        else:
+        if name!="" and email!="":
             contact = Contact(name=name, email=email, phone=phone, desc=desc, date=datetime.today())
             contact.save()
             messages.success(request, "Your Information Has Been Submitted ! ")
+        
          #return HttpResponse("this is my about page")
     return render(request,'contact.html')
         
