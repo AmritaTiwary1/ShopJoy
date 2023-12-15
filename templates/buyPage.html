@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Want_To_Buy{% endblock title %}
+{% block body %}
+<section class="h-100 gradient-custom">
+    <div class="container">
+      <div class="row d-flex justify-content-center ">
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <div class="card-header py-3">
+              <h6 class="mb-0">SHOP NOW</h6>
+            </div>
+            <div class="card-body">
+              <!-- Single item -->
+              <div class="row">
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                  <!-- Image -->
+                  <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+                      class="w-100" alt="Blue Jeans Jacket" />
+                    <a href="#!">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                    </a>
+                  </div>
+                  <!-- Image -->
+                </div>
+  
+                <div class="col-lg-5 col-md-6  mb-lg-0">
+                  <!-- Data -->
+                  <p><strong>Blue denim shirt</strong></p>
+                  <p>Color: blue</p>
+                  <p>Size: M</p>
+                  <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                    title="Remove item">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                    title="Move to the wish list">
+                    <i class="fas fa-heart"></i>
+                  </button>
+                  <!-- Data -->
+                </div>
+  
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <!-- Price -->
+                  <p class="text-start text-md-center">
+                    <strong>$17.99</strong>
+                  </p>
+                  <!-- Price -->
+                </div>
+              </div>
+
+          <div class="card mb-lg-0">
+            <div class="card-body">
+              <p><strong>We accept</strong></p>
+              <img class="me-2" width="45px"
+                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                alt="Visa" />
+             <img class="me-2" width="45px"
+                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                alt="Mastercard" />
+              
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+{% endblock body %}
