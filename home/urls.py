@@ -2,8 +2,8 @@ from django.contrib import admin
 from django.urls import path
 
 from home import views 
-# i imported view so that by going to urls,it show context, views keep info about content
-#it has info of all urls present in the project
+# I imported view so that by going to urls,it show context, views keep info about content
+#It has info of all urls present in the project
 
 urlpatterns = [
     path('',views.index, name='home'),
