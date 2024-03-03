@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 #makemigrations - create changes and store in file
 #migrate - apply pending changes created by makemigrations
 class Contact(models.Model):
